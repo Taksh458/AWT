@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+<title>layout 1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* 
+{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background:-moz-linear-gradient(to left,#00FFFF,#00FF00);
+}
+
+
+header {
+  background-color:darksalmon;
+  padding: 25px;
+  text-align: center;
+  font-size: 35px;
+  color:red;
+}
+
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  padding: 20px;
+  background-color:cyan ;
+}
+
+
+nav ul {
+  list-style-type:upper-alpha;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  color: black;
+  background-color:darkorange;
+  height: 300px;
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: darkgray;
+}
+
+
+footer {
+  background-color:lightgreen;
+  padding:20px;
+  text-align:left;
+  color:blue;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Different Cities</h2>`
+
+</header>
+
+<section>
+  <nav>
+    <h2><b>different Cities</b></h2>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+      <li><a href="#">australia</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1><b>some qoutes about london</b></h1>
+    <li>“In London, everyone is different, and that means anyone can fit in.” – Paddington Bear</li>
+    <li>“When a man is tired of London, he is tired of life; for there is in London all that life can afford.” – Samuel Johnson
+        “There’s nowhere else like London. Nothing at all, anywhere.” – Vivienne Westwood
+        “The man who can dominate a London dinner-table can dominate the world.” – Oscar Wilde</li>
+
+  </article>
+</section>
+
+<footer>
+  <p><b>NOTE: </b>A trip to London might not be possible at the moment, but we can still daydream about spending a couple of days in London </p>
+</footer>
+</body>
+</html>
